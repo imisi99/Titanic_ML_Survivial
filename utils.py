@@ -7,3 +7,8 @@ def modify_data(file_path):
     print(df.head())
 
     df = df.drop(columns=['PassengerId', 'Name'])
+
+    print('data after processing...')
+    print(df.head())
+
+    return df
