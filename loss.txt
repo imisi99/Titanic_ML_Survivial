@@ -1,9 +1,32 @@
-Results for max 1000:
-For degree 1 the metrics are f1 score: [0.76300578 0.73469388], precision: [0.78884462 0.73972603], recall: [0.73880597 0.72972973]
-For degree 2 the metrics are f1 score: [0.82591093 0.75524476], precision: [0.90265487 0.7826087 ], recall: [0.76119403 0.72972973]
-For degree 3 the metrics are f1 score: [0.84920635 0.73611111], precision: [0.90677966 0.75714286], recall: [0.79850746 0.71621622]
+Results for max 1000 and threshold for 0.5:
+For degree 1 the metrics are f1 score: [0.76300578 0.73469388], precision: [0.78884462 0.73972603], recall: [0.73880597 0.72972973], accuracy: [0.82724719 0.78212291]
+For degree 2 the metrics are f1 score: [0.82591093 0.75524476], precision: [0.90265487 0.7826087 ], recall: [0.76119403 0.72972973], accuracy: [0.87921348 0.80446927]
+For degree 3 the metrics are f1 score: [0.84920635 0.73611111], precision: [0.90677966 0.75714286], recall: [0.79850746 0.71621622], accuracy: [0.89325843 0.7877095 ]
+For degree 4 the metrics are f1 score: [0.86055777 0.73611111], precision: [0.92307692 0.75714286], recall: [0.80597015 0.71621622], accuracy: [0.90168539 0.7877095 ]
 
-Results:
-For degree 1 the metrics are f1 score: [0.76300578 0.73469388], precision: [0.78884462 0.73972603], recall: [0.73880597 0.72972973]
-For degree 2 the metrics are f1 score: [0.82897384 0.73611111], precision: [0.89956332 0.75714286], recall: [0.76865672 0.71621622]
-For degree 3 the metrics are f1 score: [0.852      0.73611111], precision: [0.91810345 0.75714286], recall: [0.79477612 0.71621622]
+Results for max 1000 and threshold for 0.7:
+For degree 1 the metrics are f1 score: [0.67764706 0.68253968], precision: [0.91719745 0.82692308], recall: [0.53731343 0.58108108], accuracy: [0.80758427 0.77653631]
+For degree 2 the metrics are f1 score: [0.8008658 0.75     ], precision: [0.95360825 0.82258065], recall: [0.69029851 0.68918919], accuracy: [0.87078652 0.81005587]
+For degree 3 the metrics are f1 score: [0.8172043  0.72058824], precision: [0.96446701 0.79032258], recall: [0.70895522 0.66216216], accuracy: [0.88061798 0.7877095 ]
+For degree 4 the metrics are f1 score: [0.83898305 0.69064748], precision: [0.97058824 0.73846154], recall: [0.73880597 0.64864865], accuracy: [0.89325843 0.75977654]
+
+Results for max 1000 and threshold for 0.4:
+For degree 1 the metrics are f1 score: [0.76470588 0.75      ], precision: [0.75362319 0.73076923], recall: [0.7761194  0.77027027], accuracy: [0.82022472 0.7877095 ]
+For degree 2 the metrics are f1 score: [0.83895131 0.74025974], precision: [0.84210526 0.7125    ], recall: [0.8358209  0.77027027], accuracy: [0.87921348 0.77653631]
+For degree 3 the metrics are f1 score: [0.85660377 0.73333333], precision: [0.86641221 0.72368421], recall: [0.84701493 0.74324324], accuracy: [0.89325843 0.77653631]
+For degree 4 the metrics are f1 score: [0.87054409 0.72483221], precision: [0.8754717 0.72     ], recall: [0.86567164 0.72972973], accuracy: [0.90308989 0.77094972]
+
+Results for max 1000 and threshold for 0.6:
+For degree 1 the metrics are f1 score: [0.75       0.76056338], precision: [0.83181818 0.79411765], recall: [0.68283582 0.72972973], accuracy: [0.82865169 0.81005587]
+For degree 2 the metrics are f1 score: [0.80679406 0.74452555], precision: [0.93596059 0.80952381], recall: [0.70895522 0.68918919], accuracy: [0.87219101 0.80446927]
+For degree 3 the metrics are f1 score: [0.83950617 0.74285714], precision: [0.93577982 0.78787879], recall: [0.76119403 0.7027027 ], accuracy: [0.89044944 0.79888268]
+For degree 4 the metrics are f1 score: [0.85480573 0.72727273], precision: [0.94570136 0.75362319], recall: [0.77985075 0.7027027 ], accuracy: [0.9002809  0.78212291]
+
+
+
+
+NN
+Results for epochs 150 and threshold 0.6
+For model1 the metrics are f1 score: [0.86185567 0.74125874], precision: [0.96313364 0.76811594], recall: [0.77985075 0.71621622], accuracy: [0.90589888 0.78212291]
+For model2 the metrics are f1 score: [0.8699187  0.73103448], precision: [0.95535714 0.74647887], recall: [0.79850746 0.71621622], accuracy: [0.91011236 0.7877095 ]
+For model3 the metrics are f1 score: [0.85655738 0.73239437], precision: [0.95       0.76470588], recall: [0.77985075 0.7027027 ], accuracy: [0.90168539 0.79329609]
