@@ -1,0 +1,9 @@
+Results for max 1000:
+For degree 1 the metrics are f1 score: [0.76300578 0.73469388], precision: [0.78884462 0.73972603], recall: [0.73880597 0.72972973]
+For degree 2 the metrics are f1 score: [0.82591093 0.75524476], precision: [0.90265487 0.7826087 ], recall: [0.76119403 0.72972973]
+For degree 3 the metrics are f1 score: [0.84920635 0.73611111], precision: [0.90677966 0.75714286], recall: [0.79850746 0.71621622]
+
+Results:
+For degree 1 the metrics are f1 score: [0.76300578 0.73469388], precision: [0.78884462 0.73972603], recall: [0.73880597 0.72972973]
+For degree 2 the metrics are f1 score: [0.82897384 0.73611111], precision: [0.89956332 0.75714286], recall: [0.76865672 0.71621622]
+For degree 3 the metrics are f1 score: [0.852      0.73611111], precision: [0.91810345 0.75714286], recall: [0.79477612 0.71621622]
