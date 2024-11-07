@@ -4,7 +4,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 
 
-def modify_data(file_path):
+def modify_data(file_path, columns_reference=None):
     df = pd.read_csv(file_path)
     print('data before processing...')
     print(df.head())
@@ -20,7 +20,15 @@ def modify_data(file_path):
     df['Cabin'] = df['Cabin'].str[0]
     # Convert categorical columns to one-hot encoding
     df = pd.get_dummies(df, columns=['Embarked', 'Parch', 'SibSp', 'Pclass', 'Cabin', 'Sex'], drop_first=True)
-    df = df.astype(int)
+
+    # fitting test data to the columns of the training data
+    if columns_reference is not None:
+        for col in columns_reference:
+            if col not in df.columns:
+                df[col] = 0
+
+        df = df[columns_reference]
+
     print('data after processing...')
     print(df.head())
 
