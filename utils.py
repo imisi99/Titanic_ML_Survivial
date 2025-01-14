@@ -2,6 +2,8 @@ import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
+from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
 
 
 def modify_data(file_path, columns_reference=None):
@@ -79,3 +81,27 @@ def build_model():
     )
 
     return [model1, model2, model3]
+
+
+def build_rf():
+    rf1 = RandomForestClassifier(n_estimators=400, min_samples_split=2, max_features='sqrt')
+    rf2 = RandomForestClassifier(n_estimators=700, min_samples_split=1, max_features='log2')
+    rf3 = RandomForestClassifier(n_estimators=1000, min_samples_split=4, max_features='log2')
+
+    rf1.name = 'rf1'
+    rf2.name = 'rf2'
+    rf3.name = 'rf3'
+
+    return [rf1, rf2, rf3]
+
+
+def build_xgboost():
+    xgb1 = XGBClassifier(n_estimators=400, max_depth=50, learning_rate=0.1, gamma=2, reg_lambda=1)
+    xgb2 = XGBClassifier(n_estimators=700, max_depth=30, learning_rate=0.3, gamma=4, reg_alpha=1)
+    xgb3 = XGBClassifier(n_estimators=1000, max_depth=10, learning_rate=0.03, gamma=6, reg_lambda=10)
+
+    xgb1.name = 'xgb1'
+    xgb2.name = 'xgb2'
+    xgb3.name = 'xgb3'
+
+    return [xgb1, xgb2, xgb3]
