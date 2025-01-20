@@ -96,9 +96,9 @@ def build_rf():
 
 
 def build_xgboost():
-    xgb1 = XGBClassifier(n_estimators=400, max_depth=100, learning_rate=0.1, reg_lambda=1)
-    xgb2 = XGBClassifier(n_estimators=700, max_depth=300, learning_rate=0.3, reg_alpha=1)
-    xgb3 = XGBClassifier(n_estimators=1000, max_depth=200, learning_rate=0.03, reg_lambda=10)
+    xgb1 = XGBClassifier(n_estimators=400, max_depth=100, learning_rate=0.1)
+    xgb2 = XGBClassifier(n_estimators=700, max_depth=300, learning_rate=0.3)
+    xgb3 = XGBClassifier(n_estimators=1000, max_depth=200, learning_rate=0.03)
 
     xgb1.name = 'xgb1'
     xgb2.name = 'xgb2'
